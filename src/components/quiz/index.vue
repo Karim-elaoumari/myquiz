@@ -1,6 +1,7 @@
 <script setup>
 import {defineProps,ref} from 'vue';
 import Loader from './loader.vue'
+
 const {quiz} = defineProps(['quiz'])
 const isLoading = ref(true)
 setTimeout(() => {
