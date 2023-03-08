@@ -8,90 +8,83 @@
             {
                 "id": 1,
                 "text": "8 ÷ 2(2 + 2)",
+                "correct" :4,
                 "options": [
                     {
                         "id": 1,
-                        "label": "A",
-                        "text": "16",
-                        "isCorrect": true
+                        
+                        "text": "16"
                     },
                     {
                         "id": 2,
-                        "label": "B",
-                        "text": "1",
-                        "isCorrect": false
+                        
+                        "text": "1"
+              
                     },
                     {
                         "id": 3,
-                        "label": "C",
-                        "text": "8",
-                        "isCorrect": false
+                       
+                        "text": "8"
                     },
                     {
                         "id": 4,
-                        "label": "D",
-                        "text": "24",
-                        "isCorrect": false
+                       
+                        "text": "24"
                     }
                 ]
+
             },
             {
                 "id": 2,
                 "text": "sqrt(64) * 9",
+                "correct": 0,
                 "options": [
                     {
                         "id": 1,
-                        "label": "A",
-                        "text": "4",
-                        "isCorrect": false
+                       
+                        "text": "4"
                     },
                     {
                         "id": 2,
-                        "label": "B",
-                        "text": "81",
-                        "isCorrect": false
+                        
+                        "text": "81"
                     },
                     {
                         "id": 3,
-                        "label": "C",
-                        "text": "72",
-                        "isCorrect": true
+                       
+                        "text": "72"
                     },
                     {
                         "id": 4,
-                        "label": "D",
-                        "text": "144",
-                        "isCorrect": false
+                       
+                        "text": "144"
                     }
                 ]
             },
             {
                 "id": 3,
                 "text": "3 + 3 x 3 ÷ 3 - 3",
+                "correct":1,
                 "options": [
                     {
                         "id": 1,
-                        "label": "A",
-                        "text": "3",
-                        "isCorrect": true
+                       
+                        "text": "3"
                     },
                     {
                         "id": 2,
-                        "label": "B",
-                        "text": "1",
-                        "isCorrect": false
+                     
+                        "text": "1"
                     },
                     {
                         "id": 3,
-                        "label": "C",
-                        "text": "9",
-                        "isCorrect": false
+                     
+                        "text": "9"
                     },
                     {
                         "id": 4,
-                        "label": "D",
-                        "text": "16",
-                        "isCorrect": false
+                       
+                        "text": "16"
                     }
                 ]
             }
@@ -105,90 +98,81 @@
             {
                 "id": 1,
                 "text": "The Kreb Cycles occurs in the",
+                "correct": 2,
                 "options": [
                     {
                         "id": 1,
-                        "label": "A",
-                        "text": "Mitochondria",
-                        "isCorrect": true
+                      
+                        "text": "Mitochondria"
                     },
                     {
                         "id": 2,
-                        "label": "B",
-                        "text": "Nucleus",
-                        "isCorrect": false
+                        
+                        "text": "Nucleus"
                     },
                     {
                         "id": 3,
-                        "label": "C",
-                        "text": "Rough ER",
-                        "isCorrect": false
+                      
+                        "text": "Rough ER"
                     },
                     {
                         "id": 4,
-                        "label": "D",
-                        "text": "Cystol",
-                        "isCorrect": false
+                       
+                        "text": "Cystol"
                     }
                 ]
             },
             {
                 "id": 2,
                 "text": "How many oxygen molecules can hemoglobin hold",
+                "correct": 1,
                 "options": [
                     {
                         "id": 1,
-                        "label": "A",
-                        "text": "1",
-                        "isCorrect": false
+                        
+                        "text": "1"
                     },
                     {
                         "id": 2,
-                        "label": "B",
-                        "text": "2",
-                        "isCorrect": false
+                       
+                        "text": "2"
                     },
                     {
                         "id": 3,
-                        "label": "C",
-                        "text": "3",
-                        "isCorrect": false
+                        
+                        "text": "3"
                     },
                     {
                         "id": 4,
-                        "label": "D",
-                        "text": "4",
-                        "isCorrect": true
+                        
+                        "text": "4"
                     }
                 ]
             },
             {
                 "id": 3,
                 "text": "The cones see ___ while the rods see ___",
+                "correct": 1,
                 "options": [
                     {
                         "id": 1,
-                        "label": "A",
-                        "text": "black and white; color",
-                        "isCorrect": false
+                        
+                        "text": "black and white; color"
                     },
                     {
                         "id": 2,
-                        "label": "B",
-                        "text": "color; black and white",
-                        "isCorrect": true
+                       
+                        "text": "color; black and white"
                     },
                     {
                         "id": 3,
-                        "label": "C",
-                        "text": "3D objects; 2D shapes",
-                        "isCorrect": false
+                      
+                        "text": "3D objects; 2D shapes"
                     },
                     {
                         "id": 4,
-                        "label": "D",
-                        "text": "2D shapes; 3D objects",
-                        "isCorrect": false
+                       
+                        "text": "2D shapes; 3D objects"
                     }
                 ]
             }
@@ -202,90 +186,74 @@
             {
                 "id": 1,
                 "text": "What is the composition of table salt",
+                "correct": 2,
                 "options": [
                     {
                         "id": 1,
-                        "label": "A",
-                        "text": "NaCl",
-                        "isCorrect": true
+                      
+                        "text": "NaCl"
                     },
                     {
                         "id": 2,
-                        "label": "B",
-                        "text": "K2",
-                        "isCorrect": false
+                        
+                        "text": "K2"
                     },
                     {
                         "id": 3,
-                        "label": "C",
-                        "text": "NaCl2C4H7",
-                        "isCorrect": false
+                       
+                        "text": "NaCl2C4H7"
                     },
                     {
                         "id": 4,
-                        "label": "D",
-                        "text": "CH4",
-                        "isCorrect": false
+                       
+                        "text": "CH4"
                     }
                 ]
             },
             {
                 "id": 2,
                 "text": "What is Potassium's chemical symbol",
+                "correct": 3,
                 "options": [
                     {
                         "id": 1,
-                        "label": "A",
-                        "text": "P",
-                        "isCorrect": false
+                        "text": "P"
                     },
                     {
                         "id": 2,
-                        "label": "B",
-                        "text": "Pt",
-                        "isCorrect": false
+                        "text": "Pt"
                     },
                     {
                         "id": 3,
-                        "label": "C",
-                        "text": "Pts",
-                        "isCorrect": false
+                        "text": "Pts"
                     },
                     {
                         "id": 4,
-                        "label": "D",
-                        "text": "K",
-                        "isCorrect": true
+                        "text": "K"
                     }
                 ]
             },
             {
                 "id": 3,
                 "text": "Which is not organinc",
+                "correct": 2,
                 "options": [
                     {
                         "id": 1,
-                        "label": "A",
-                        "text": "CH4",
-                        "isCorrect": false
+                        "text": "CH4"
                     },
                     {
                         "id": 2,
-                        "label": "B",
-                        "text": "NaCl",
-                        "isCorrect": true
+                        "text": "NaCl"
                     },
                     {
                         "id": 3,
-                        "label": "C",
-                        "text": "C2H6",
-                        "isCorrect": false
+                        "text": "C2H6"
                     },
                     {
                         "id": 4,
-                        "label": "D",
-                        "text": "C3H8",
-                        "isCorrect": false
+                     
+                        "text": "C3H8"
                     }
                 ]
             }

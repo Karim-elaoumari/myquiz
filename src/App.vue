@@ -5,6 +5,7 @@ import Quiz from './components/quiz/index.vue'
 import Home from './components/home/home.vue'
 import Stepper from './components/stepper.vue'
 import Instractions from './components/instractions.vue'
+import Results from './components/results.vue'
 
 
 const quizSelected = ref(null)
@@ -22,9 +23,11 @@ const startQuiz = ()=>{
 const returnHome  = ()=>{
   currentStep.value = 1
   currentComponent.value = Home
-
 }
-
+const showResult = ()=>{
+  currentStep.value = 4
+  currentComponent.value = Results
+}
 provide('quizes', q)
 </script>
 <template>
@@ -38,7 +41,7 @@ provide('quizes', q)
   <main class="">
     <div class="row ">
       <div class="col-xs-12 col-md-8 offset-md-2 block border" style="min-height: 70vh;">
-        <component :is="currentComponent"  @quiz-selected="selectedQuiz" :quiz="quizSelected" @start-quiz="startQuiz" @return-home="returnHome"/>
+        <component :is="currentComponent"  @quiz-selected="selectedQuiz" :quiz="quizSelected" @start-quiz="startQuiz" @return-home="returnHome" @return-result="showResult"/>
       </div>
    </div>
   </main>
