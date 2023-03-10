@@ -11,6 +11,7 @@ import Results from './components/results.vue'
 const quizSelected = ref(null)
 const currentComponent = ref(Home)
 const currentStep = ref(1)
+const resultOfQuizz =ref(null)
 const selectedQuiz = (newquizSelected)=>{
   currentStep.value = 2 
   currentComponent.value = Instractions
@@ -20,11 +21,12 @@ const startQuiz = ()=>{
   currentStep.value = 3 
   currentComponent.value = Quiz
 }
-const returnHome  = ()=>{
+const returnHome = ()=>{
   currentStep.value = 1
   currentComponent.value = Home
 }
-const showResult = ()=>{
+const showResult = (resultOfQuiz)=>{
+  resultOfQuizz.value = {'quiz':quizSelected,'Info':resultOfQuiz}
   currentStep.value = 4
   currentComponent.value = Results
 }
@@ -41,7 +43,7 @@ provide('quizes', q)
   <main class="">
     <div class="row ">
       <div class="col-xs-12 col-md-8 offset-md-2 block border" style="min-height: 70vh;">
-        <component :is="currentComponent"  @quiz-selected="selectedQuiz" :quiz="quizSelected" @start-quiz="startQuiz" @return-home="returnHome" @return-result="showResult"/>
+        <component :is="currentComponent"  @quiz-selected="selectedQuiz" :quiz="quizSelected"  @start-quiz="startQuiz" @return-home="returnHome" @return-result="showResult" :result="resultOfQuizz"/>
       </div>
    </div>
   </main>

@@ -1,5 +1,5 @@
 <script setup>
-import {defineProps,ref} from 'vue';
+import {defineProps,ref,provide} from 'vue';
 import Question from './question.vue'
 import Option from './option.vue'
 const {quiz} = defineProps(['quiz'])
@@ -8,9 +8,10 @@ const newnum = ref(null);
 const currentQuestion = ref(0)
 const i = ref(0)
 const iscorrect = ref('btn-secondary')
-const option_id  = ref(null)
+const option_id  = ref(false)
 const completed = ref(false)
-const score = ref(0)
+const score =ref(0)
+const scoreInfo =[]
 
 
 const randoomQuestions =(max) =>{
@@ -29,10 +30,15 @@ const  option_selected = (option__id)=>{
         iscorrect.value = 'btn-success'
         score.value++
     }
-    else iscorrect.value = 'btn-danger'
+    else {
+        iscorrect.value = 'btn-danger'
+        scoreInfo.push({'question_id':quiz.questions[random.value[currentQuestion.value]].id})
+    }
+
 }
 const nextQuestion = ()=>{
-    if(currentQuestion.value < quiz.questions.length-1){
+    if(option_id.value!=false){
+        if(currentQuestion.value < quiz.questions.length-1){
     currentQuestion.value++
     iscorrect.value = 'btn-secondary'
     option_id.value=false
@@ -40,6 +46,8 @@ const nextQuestion = ()=>{
     else{
         completed.value = true
     }
+    }
+   
     
 }
 </script>
@@ -49,7 +57,7 @@ const nextQuestion = ()=>{
                 <div class="border">
                     <div class="question bg-white p-3 border-bottom">
                         <div class="d-flex flex-row justify-content-between align-items-center mcq">
-                            <h4 style="color:rgb(8, 152, 119);">{{ quiz.name }}</h4><span>(0 of {{ quiz.questions.length }})</span></div>
+                            <h4 style="color:rgb(8, 152, 119);">{{ quiz.name }}</h4><span>({{ currentQuestion }} of {{ quiz.questions.length }})</span></div>
                     </div>
                     <div class="question bg-white p-3 border-bottom">
                         <div class="d-flex flex-row align-items-center question-title">
@@ -60,8 +68,8 @@ const nextQuestion = ()=>{
                         </div>
                         </div>
                     <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button @click="$emit('return-home')" class="btn btn-primary d-flex align-items-center btn-danger" type="button"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;Exit</button>
-                        <button  v-if="completed" class="btn btn-primary border-success align-items-center btn-success" type="button" @click="$emit('return-result')">View Result<i class="fa fa-angle-right ml-2"></i></button>
-                        <button  v-if="!completed" class="btn btn-primary border-success align-items-center btn-success" type="button" @click="nextQuestion">Next<i class="fa fa-angle-right ml-2"></i></button></div>
+                        <button  v-if="completed" class="btn btn-primary border-success align-items-center btn-success" type="button" @click="$emit('return-result',{'score':score,'info':scoreInfo})">View Result<i class="fa fa-angle-right ml-2"></i></button>
+                        <button  v-if="!completed" class="btn btn-primary border-success align-items-center btn-success" type="button" @click="nextQuestion" :disabled="!option_id">Next<i class="fa fa-angle-right ml-2" ></i></button></div>
                 </div>
             </div>
         </div>

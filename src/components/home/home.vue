@@ -18,7 +18,7 @@ const search = ref("")
               <input class="form-control me-2" v-model="search" type="search" placeholder="Search Quiz ..." >
         </div>
         <div class="row p-2 justify-content-between">
-        <Card  @click="$emit('quiz-selected', quiz)" v-for="quiz in quizes" :key="quiz.id" :quiz="quiz"/>
+        <Card  @click="$emit('quiz-selected', quiz)" v-for="quiz in quizes" :key="quiz.id" :quiz="quiz" style="margin:auto;"/>
         </div>
 </template>
 <style scoped>

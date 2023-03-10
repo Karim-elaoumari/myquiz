@@ -3,12 +3,13 @@
         "id": 1,
         "img": "https://marvel-b1-cdn.bc0a.com/f00000000026007/resilienteducator.com/wp-content/uploads/2012/11/AdobeStock_60467600_cup.jpg",
         "name": "Math quiz",
-
+       
         "questions": [
             {
                 "id": 1,
                 "text": "8 ÷ 2(2 + 2)",
                 "correct" :4,
+                "answer" :"the left hand is right to be pushed in the wall of the lengends in the blue print",
                 "options": [
                     {
                         "id": 1,
@@ -38,6 +39,7 @@
                 "id": 2,
                 "text": "sqrt(64) * 9",
                 "correct": 0,
+                "answer" :"the left hand is right to be pushed in the wall of the lengends in the blue print",
                 "options": [
                     {
                         "id": 1,
@@ -65,6 +67,7 @@
                 "id": 3,
                 "text": "3 + 3 x 3 ÷ 3 - 3",
                 "correct":1,
+                "answer" :"the left hand is right to be pushed in the wall of the lengends in the blue print",
                 "options": [
                     {
                         "id": 1,
@@ -99,6 +102,7 @@
                 "id": 1,
                 "text": "The Kreb Cycles occurs in the",
                 "correct": 2,
+                "answer" :"the left hand is right to be pushed in the wall of the lengends in the blue print",
                 "options": [
                     {
                         "id": 1,
@@ -126,6 +130,7 @@
                 "id": 2,
                 "text": "How many oxygen molecules can hemoglobin hold",
                 "correct": 1,
+                "answer" :"the left hand is right to be pushed in the wall of the lengends in the blue print",
                 "options": [
                     {
                         "id": 1,
@@ -153,6 +158,7 @@
                 "id": 3,
                 "text": "The cones see ___ while the rods see ___",
                 "correct": 1,
+                "answer" :"the left hand is right to be pushed in the wall of the lengends in the blue print",
                 "options": [
                     {
                         "id": 1,
@@ -187,6 +193,7 @@
                 "id": 1,
                 "text": "What is the composition of table salt",
                 "correct": 2,
+                "answer" :"the left hand is right to be pushed in the wall of the lengends in the blue print",
                 "options": [
                     {
                         "id": 1,
@@ -214,6 +221,7 @@
                 "id": 2,
                 "text": "What is Potassium's chemical symbol",
                 "correct": 3,
+                "answer" :"the left hand is right to be pushed in the wall of the lengends in the blue print",
                 "options": [
                     {
                         "id": 1,
@@ -237,6 +245,7 @@
                 "id": 3,
                 "text": "Which is not organinc",
                 "correct": 2,
+                "answer" :"the left hand is right to be pushed in the wall of the lengends in the blue print",
                 "options": [
                     {
                         "id": 1,
