@@ -14,7 +14,8 @@ const stepsNames = ref(['Home','Instractions','Quiz','Results'])
 </template>
 <style scoped>
 .wrapper-progressBar {
-    width: 100%
+    width: 100%;
+    
 }
 .progressBar li {
     list-style-type: none;
@@ -34,7 +35,7 @@ const stepsNames = ref(['Home','Instractions','Quiz','Results'])
     display: block;
     text-align: center;
     margin: 0 auto 10px;
-    background-color: white
+    background-color: white;
 }
 
 .progressBar li:after {
@@ -46,6 +47,7 @@ const stepsNames = ref(['Home','Instractions','Quiz','Results'])
     top: 15px;
     left: -50%;
     z-index: -1;
+   
 }
 
 .progressBar li:first-child:after {
@@ -54,11 +56,13 @@ const stepsNames = ref(['Home','Instractions','Quiz','Results'])
 
 .progressBar li.active {
     color: rgb(8, 152, 119);
+    
 }
 
 .progressBar li.active:before {
     border-color: rgb(8, 152, 119);
     background-color:  rgb(8, 152, 119);
+    
 }
 
 .progressBar .active:after {

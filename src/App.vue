@@ -1,13 +1,22 @@
 <script setup>
+import axios from "axios";
 import {ref,provide} from 'vue'
-import q from './data/quizes.json'
 import Quiz from './components/quiz/index.vue'
 import Home from './components/home/home.vue'
 import Stepper from './components/stepper.vue'
 import Instractions from './components/instractions.vue'
 import Results from './components/results.vue'
+import AddQuiz from './components/addQuiz/form.vue'
 
-
+const q = ref([])
+const fetchQuizes = () => {
+      axios
+        .get("http://localhost:3001/quizes")
+        .then((response) => {
+          q.value = response.data;
+        });
+};
+fetchQuizes()
 const quizSelected = ref(null)
 const currentComponent = ref(Home)
 const currentStep = ref(1)
@@ -30,6 +39,10 @@ const showResult = (resultOfQuiz)=>{
   currentStep.value = 4
   currentComponent.value = Results
 }
+
+const add_Quiz = ()=>{
+  currentComponent.value = AddQuiz
+}
 provide('quizes', q)
 </script>
 <template>
@@ -43,7 +56,7 @@ provide('quizes', q)
   <main class="">
     <div class="row ">
       <div class="col-xs-12 col-md-8 offset-md-2 block border" style="min-height: 70vh;">
-        <component :is="currentComponent"  @quiz-selected="selectedQuiz" :quiz="quizSelected"  @start-quiz="startQuiz" @return-home="returnHome" @return-result="showResult" :result="resultOfQuizz"/>
+        <component :is="currentComponent"  @quiz-selected="selectedQuiz" :quiz="quizSelected"  @start-quiz="startQuiz" @return-home="returnHome" @return-result="showResult"  @add-quiz="add_Quiz" :result="resultOfQuizz"/>
       </div>
    </div>
   </main>

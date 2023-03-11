@@ -19,7 +19,10 @@ const search = ref("")
         </div>
         <div class="row p-2 justify-content-between">
         <Card  @click="$emit('quiz-selected', quiz)" v-for="quiz in quizes" :key="quiz.id" :quiz="quiz" style="margin:auto;"/>
+
+
         </div>
+        <button @click="$emit('add-quiz')" type="button" class="btn btn-success ms-3">Add Quiz</button>
 </template>
 <style scoped>
 .form-control:focus {

@@ -37,7 +37,7 @@ for (const question of result.quiz.questions){
        </ul>
        <div class=" text-center mt-4">
         <button  @click="$emit('return-home')" type="button" class="btn btn-warning">Return</button>
-        <button @click="$emit('start-quiz')" type="button" class="btn btn-success ms-3">Start</button>
+        <button @click="$emit('start-quiz')" type="button" class="btn btn-success ms-3">Re Start</button>
         </div>
 </template>
 

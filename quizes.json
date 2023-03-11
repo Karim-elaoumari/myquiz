@@ -1,0 +1,280 @@
+{
+  "quizes": [
+    {
+      "id": 1,
+      "img": "https://marvel-b1-cdn.bc0a.com/f00000000026007/resilienteducator.com/wp-content/uploads/2012/11/AdobeStock_60467600_cup.jpg",
+      "name": "Math quiz",
+      "questions": [
+        {
+          "id": 1,
+          "text": "8 ÷ 2(2 + 2)",
+          "correct": 4,
+          "answer": "the left hand is right to be pushed in the wall of the lengends in the blue print",
+          "options": [
+            {
+              "id": 1,
+              "text": "16"
+            },
+            {
+              "id": 2,
+              "text": "1"
+            },
+            {
+              "id": 3,
+              "text": "8"
+            },
+            {
+              "id": 4,
+              "text": "24"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "sqrt(64) * 9",
+          "correct": 0,
+          "answer": "the left hand is right to be pushed in the wall of the lengends in the blue print",
+          "options": [
+            {
+              "id": 1,
+              "text": "4"
+            },
+            {
+              "id": 2,
+              "text": "81"
+            },
+            {
+              "id": 3,
+              "text": "72"
+            },
+            {
+              "id": 4,
+              "text": "144"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "3 + 3 x 3 ÷ 3 - 3",
+          "correct": 1,
+          "answer": "the left hand is right to be pushed in the wall of the lengends in the blue print",
+          "options": [
+            {
+              "id": 1,
+              "text": "3"
+            },
+            {
+              "id": 2,
+              "text": "1"
+            },
+            {
+              "id": 3,
+              "text": "9"
+            },
+            {
+              "id": 4,
+              "text": "16"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "img": "https://blogs.biomedcentral.com/on-biology/wp-content/uploads/sites/5/2017/12/DNA.png",
+      "name": "Biology",
+      "questions": [
+        {
+          "id": 1,
+          "text": "The Kreb Cycles occurs in the",
+          "correct": 2,
+          "answer": "the left hand is right to be pushed in the wall of the lengends in the blue print",
+          "options": [
+            {
+              "id": 1,
+              "text": "Mitochondria"
+            },
+            {
+              "id": 2,
+              "text": "Nucleus"
+            },
+            {
+              "id": 3,
+              "text": "Rough ER"
+            },
+            {
+              "id": 4,
+              "text": "Cystol"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "How many oxygen molecules can hemoglobin hold",
+          "correct": 1,
+          "answer": "the left hand is right to be pushed in the wall of the lengends in the blue print",
+          "options": [
+            {
+              "id": 1,
+              "text": "1"
+            },
+            {
+              "id": 2,
+              "text": "2"
+            },
+            {
+              "id": 3,
+              "text": "3"
+            },
+            {
+              "id": 4,
+              "text": "4"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "The cones see ___ while the rods see ___",
+          "correct": 1,
+          "answer": "the left hand is right to be pushed in the wall of the lengends in the blue print",
+          "options": [
+            {
+              "id": 1,
+              "text": "black and white; color"
+            },
+            {
+              "id": 2,
+              "text": "color; black and white"
+            },
+            {
+              "id": 3,
+              "text": "3D objects; 2D shapes"
+            },
+            {
+              "id": 4,
+              "text": "2D shapes; 3D objects"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "img": "http://jobs.newscientist.com/getasset/c40a5488-11be-43b0-843f-a2e6ef9f0612/",
+      "name": "Chemistry",
+      "questions": [
+        {
+          "id": 1,
+          "text": "What is the composition of table salt",
+          "correct": 2,
+          "answer": "the left hand is right to be pushed in the wall of the lengends in the blue print",
+          "options": [
+            {
+              "id": 1,
+              "text": "NaCl"
+            },
+            {
+              "id": 2,
+              "text": "K2"
+            },
+            {
+              "id": 3,
+              "text": "NaCl2C4H7"
+            },
+            {
+              "id": 4,
+              "text": "CH4"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "What is Potassium's chemical symbol",
+          "correct": 3,
+          "answer": "the left hand is right to be pushed in the wall of the lengends in the blue print",
+          "options": [
+            {
+              "id": 1,
+              "text": "P"
+            },
+            {
+              "id": 2,
+              "text": "Pt"
+            },
+            {
+              "id": 3,
+              "text": "Pts"
+            },
+            {
+              "id": 4,
+              "text": "K"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Which is not organinc",
+          "correct": 2,
+          "answer": "the left hand is right to be pushed in the wall of the lengends in the blue print",
+          "options": [
+            {
+              "id": 1,
+              "text": "CH4"
+            },
+            {
+              "id": 2,
+              "text": "NaCl"
+            },
+            {
+              "id": 3,
+              "text": "C2H6"
+            },
+            {
+              "id": 4,
+              "text": "C3H8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXHkLS2Z0wW7q_qAzyVjsOOcZHdDhZEHQAwg&usqp=CAU",
+      "name": "sevugjskdfv",
+      "questions": [
+        {
+          "id": 1,
+          "text": "zefefazecfae",
+          "correct": 1,
+          "answer": "fzefzefz",
+          "options": [
+            {
+              "id": 1,
+              "text": "1"
+            },
+            {
+              "id": 2,
+              "text": "3"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "zerferzfref",
+          "correct": 1,
+          "answer": "zdefzedzf",
+          "options": [
+            {
+              "id": 1,
+              "text": "3"
+            },
+            {
+              "id": 2,
+              "text": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

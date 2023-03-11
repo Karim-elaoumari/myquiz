@@ -34,7 +34,6 @@ const  option_selected = (option__id)=>{
         iscorrect.value = 'btn-danger'
         scoreInfo.push({'question_id':quiz.questions[random.value[currentQuestion.value]].id})
     }
-
 }
 const nextQuestion = ()=>{
     if(option_id.value!=false){
@@ -47,8 +46,6 @@ const nextQuestion = ()=>{
         completed.value = true
     }
     }
-   
-    
 }
 </script>
 <template>
