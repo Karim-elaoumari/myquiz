@@ -1,6 +1,6 @@
 <script setup>
 import axios from "axios";
-import {ref,provide} from 'vue'
+import {ref,provide,reactive} from 'vue'
 import Quiz from './components/quiz/index.vue'
 import Home from './components/home/home.vue'
 import Stepper from './components/stepper.vue'
@@ -8,7 +8,7 @@ import Instractions from './components/instractions.vue'
 import Results from './components/results.vue'
 import AddQuiz from './components/addQuiz/form.vue'
 
-const q = null
+const q = reactive({ data: [] });
 const fetchQuizes = () => {
       axios
         .get("https://myquiz-server.vercel.app/api/quizes")
@@ -43,7 +43,7 @@ const showResult = (resultOfQuiz)=>{
 const add_Quiz = ()=>{
   currentComponent.value = AddQuiz
 }
-provide('quizes', q)
+provide('quizes', q.data)
 </script>
 <template>
   <header>
