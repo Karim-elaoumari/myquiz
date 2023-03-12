@@ -24,9 +24,9 @@ const search = ref("")
        <div class="row mt-2">
          <div class="col-8">
             <input class=" form-control" v-model="search" type="search" placeholder="Search Quiz ..." >
-         </div>a
+         </div>
          <div class="col">
-            <button @click="$emit('add-quiz')" type="button" class=" btn btn-success"> Quiz</button>
+            <button @click="$emit('add-quiz')" type="button" class=" btn btn-success">Add Quiz</button>
          </div>
 
         </div>
