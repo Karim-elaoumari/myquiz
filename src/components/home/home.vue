@@ -14,9 +14,14 @@ const search = ref("")
                 Pick A Quiz 
             </h3> 
         </div>
-       <div class=" mt-2 row">
-              <input class="col-10 form-control me-2" v-model="search" type="search" placeholder="Search Quiz ..." >
-              <button @click="$emit('add-quiz')" type="button" class="col-2 btn btn-success ms-3">Add Quiz</button>
+       <div class="row mt-2">
+         <div class="col-8">
+            <input class=" form-control" v-model="search" type="search" placeholder="Search Quiz ..." >
+         </div>
+         <div class="col">
+            <button @click="$emit('add-quiz')" type="button" class=" btn btn-success">Add Quiz</button>
+         </div>
+
         </div>
         <div class="row p-2 justify-content-between">
         <Card  @click="$emit('quiz-selected', quiz)" v-for="quiz in quizes" :key="quiz.id" :quiz="quiz" style="margin:auto;"/>
