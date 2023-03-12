@@ -5,7 +5,7 @@ const quizes1 = inject('quizes')
 const quizes = ref(quizes1)
 const search = ref("")
  watch(search,() =>{
-    if(search.value == '') {
+    if(!search.value) {
     quizes.value = quizes1;
   } else {
     const filteredQuizes = quizes1.filter(quiz =>
