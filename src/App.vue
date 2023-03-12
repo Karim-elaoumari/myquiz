@@ -9,7 +9,7 @@ import Results from './components/results.vue'
 import AddQuiz from './components/addQuiz/form.vue'
 
 
-const q = []
+const q = null
 const fetchQuizes = () => {
       axios
         .get("https://myquiz-server.vercel.app/api/quizes")
