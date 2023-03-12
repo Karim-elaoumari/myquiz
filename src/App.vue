@@ -8,7 +8,7 @@ import Instractions from './components/instractions.vue'
 import Results from './components/results.vue'
 import AddQuiz from './components/addQuiz/form.vue'
 
-const q = ref();
+const q = ref([])
 const fetchQuizes = () => {
       axios
         .get("https://myquiz-server.vercel.app/api/quizes")
@@ -43,7 +43,7 @@ const showResult = (resultOfQuiz)=>{
 const add_Quiz = ()=>{
   currentComponent.value = AddQuiz
 }
-provide('quizes', q.value)
+provide('quizes', q)
 </script>
 <template>
   <header>
