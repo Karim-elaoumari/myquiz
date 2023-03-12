@@ -20,7 +20,7 @@ const search = ref("")
             <input class=" form-control" v-model="search" type="search" placeholder="Search Quiz ..." >
          </div>
          <div class="col">
-            <button @click="$emit('add-quiz')" type="button" class=" btn btn-success"> Quiz</button>
+            <button @click="$emit('add-quiz')" type="button" class=" btn btn-success">Add Quiz</button>
          </div>
 
         </div>
