@@ -8,7 +8,10 @@ const search = ref("")
     if(search.value == '') {
     quizes.value = quizes1;
   } else {
-    quizes.value = quizes1.filter(quiz => quiz.name.toLowerCase().includes(search.value.toLowerCase()));
+    const filteredQuizes = quizes1.filter(quiz =>
+      quiz.name.toLowerCase().includes(search.value.toLowerCase())
+    );
+    quizes.value = filteredQuizes;
   }
  });
 </script>

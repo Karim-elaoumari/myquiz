@@ -8,12 +8,12 @@ import Instractions from './components/instractions.vue'
 import Results from './components/results.vue'
 import AddQuiz from './components/addQuiz/form.vue'
 
-const q = reactive({ data: [] });
+const q = null;
 const fetchQuizes = () => {
       axios
         .get("https://myquiz-server.vercel.app/api/quizes")
         .then((response) => {
-          q.data= response.data;
+          q = response.data;
         });
 };
 fetchQuizes()
@@ -43,7 +43,7 @@ const showResult = (resultOfQuiz)=>{
 const add_Quiz = ()=>{
   currentComponent.value = AddQuiz
 }
-provide('quizes', q.data)
+provide('quizes', q)
 </script>
 <template>
   <header>
