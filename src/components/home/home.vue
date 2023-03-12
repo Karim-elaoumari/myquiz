@@ -2,7 +2,7 @@
 import {ref,watch,inject} from 'vue';
 import Card from './card.vue'
 const quizes1 = inject('quizes')
-const quizes = ref(quizes1)
+const quizes = ref(quizes1.value)
 const search = ref("")
  watch(search,() =>{
   quizes.value = quizes1.value.filter(quiz => quiz.name.toLowerCase().includes(search.value.toLowerCase()))
@@ -19,7 +19,7 @@ const search = ref("")
             <input class=" form-control" v-model="search" type="search" placeholder="Search Quiz ..." >
          </div>
          <div class="col">
-            <button @click="$emit('add-quiz')" type="button" class=" btn btn-success">Add Quiz</button>
+            <button @click="$emit('add-quiz')" type="button" class=" btn btn-success"> Quiz</button>
          </div>
 
         </div>
