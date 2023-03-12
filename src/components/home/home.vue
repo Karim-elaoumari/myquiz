@@ -3,10 +3,9 @@ import {ref,watch,inject} from 'vue';
 import Card from './card.vue'
 const quizes1 = inject('quizes')
 const quizes = ref(quizes1)
-const quizessearch = ref(quizes1)
 const search = ref("")
  watch(search,() =>{
-  quizes.value = quizessearch.value.filter(quiz => quiz.name.toLowerCase().includes(search.value.toLowerCase()))
+  quizes.value = quizes1.filter(quiz => quiz.name.toLowerCase().includes(search.value.toLowerCase()))
  });
 </script>
 <template>

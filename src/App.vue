@@ -8,7 +8,8 @@ import Instractions from './components/instractions.vue'
 import Results from './components/results.vue'
 import AddQuiz from './components/addQuiz/form.vue'
 
-const q =null
+
+const q = []
 const fetchQuizes = () => {
       axios
         .get("https://myquiz-server.vercel.app/api/quizes")
