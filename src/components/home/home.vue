@@ -4,13 +4,16 @@ import Card from './card.vue'
 const quizes1 = inject('quizes')
 const quizmain = ref(quizes1)
 const quizes = ref(quizes1)
-const search = ref('')
-  if(search.value===''){
-    quizes.value = quizes1.value
-  }
-  else{
-    quizes.value = quizmain.value.filter(quiz => quiz.name.toLowerCase().includes(search.value.toLowerCase()))
-  }
+const search = ref("")
+ watch(search,() =>{
+    if(search.value==''){
+        quizes.value = quizes1.value
+    }
+    else{
+        quizes.value = quizmain.value.filter(quiz => quiz.name.toLowerCase().includes(search.value.toLowerCase()))
+    }
+
+ });
 </script>
 <template>
         <div class=" text-center">
@@ -21,9 +24,9 @@ const search = ref('')
        <div class="row mt-2">
          <div class="col-8">
             <input class=" form-control" v-model="search" type="search" placeholder="Search Quiz ..." >
-         </div>
+         </div>a
          <div class="col">
-            <button @click="$emit('add-quiz')" type="button" class=" btn btn-success"> Add Quiz</button>
+            <button @click="$emit('add-quiz')" type="button" class=" btn btn-success"> Quiz</button>
          </div>
 
         </div>
