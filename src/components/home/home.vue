@@ -5,7 +5,11 @@ const quizes1 = inject('quizes')
 const quizes = ref(quizes1)
 const search = ref("")
  watch(search,() =>{
-  quizes.value = quizes1.value.filter(quiz => quiz.name.toLowerCase().includes(search.value.toLowerCase()))
+    if (search.value == '') {
+    quizes.value = quizes1.value;
+  } else {
+    quizes.value = quizes1.value.filter(quiz => quiz.name.toLowerCase().includes(search.value.toLowerCase()));
+  }
  });
 </script>
 <template>
