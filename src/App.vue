@@ -13,7 +13,7 @@ const fetchQuizes = () => {
       axios
         .get("https://myquiz-server.vercel.app/api/quizes")
         .then((response) => {
-          q = response.data;
+           provide('quizes',  response.data)
         });
 };
 fetchQuizes()
@@ -43,7 +43,6 @@ const showResult = (resultOfQuiz)=>{
 const add_Quiz = ()=>{
   currentComponent.value = AddQuiz
 }
-provide('quizes', q)
 </script>
 <template>
   <header>
