@@ -13,7 +13,7 @@ const fetchQuizes = () => {
       axios
         .get("https://myquiz-server.vercel.app/api/quizes")
         .then((response) => {
-          q= response.data;
+          q.data= response.data;
         });
 };
 fetchQuizes()
