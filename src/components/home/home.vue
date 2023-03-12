@@ -5,10 +5,10 @@ const quizes1 = inject('quizes')
 const quizes = ref(quizes1)
 const search = ref("")
  watch(search,() =>{
-    if (search.value == '') {
-    quizes.value = quizes1.value;
+    if(search.value == '') {
+    quizes.value = quizes1;
   } else {
-    quizes.value = quizes1.value.filter(quiz => quiz.name.toLowerCase().includes(search.value.toLowerCase()));
+    quizes.value = quizes1.filter(quiz => quiz.name.toLowerCase().includes(search.value.toLowerCase()));
   }
  });
 </script>

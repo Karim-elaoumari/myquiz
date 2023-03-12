@@ -8,12 +8,12 @@ import Instractions from './components/instractions.vue'
 import Results from './components/results.vue'
 import AddQuiz from './components/addQuiz/form.vue'
 
-const q = ref([])
+const q = null
 const fetchQuizes = () => {
       axios
         .get("https://myquiz-server.vercel.app/api/quizes")
         .then((response) => {
-          q.value = response.data;
+          q= response.data;
         });
 };
 fetchQuizes()
