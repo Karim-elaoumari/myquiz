@@ -27,7 +27,7 @@ const submit = () => {
   axios.post('https://myquiz-server.herokuapp.com/quizes', quizValue.value)
     .then((response) => {
       // If the POST request was successful, add the new quiz to the local quizes array as well
-      console.log('gooood')
+      
     })
     .catch((error) => {
       console.error(error)

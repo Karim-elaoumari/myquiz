@@ -43,6 +43,16 @@ const showResult = (resultOfQuiz)=>{
 const add_Quiz = ()=>{
   currentComponent.value = AddQuiz
 }
+const deleteQuiz = ()=>{
+  axios.delete('https://myquiz-server.herokuapp.com/quizes/'+quizSelected.id)
+    .then((response) => {
+      alert('quiz-deleted')
+    })
+    .catch((error) => {
+      console.error(error)
+    })
+
+}
 provide('quizes', q)
 </script>
 <template>
@@ -56,7 +66,7 @@ provide('quizes', q)
   <main class="">
     <div class="row ">
       <div class="col-xs-12 col-md-8 offset-md-2 block border" style="min-height: 70vh;">
-        <component :is="currentComponent"  @quiz-selected="selectedQuiz" :quiz="quizSelected"  @start-quiz="startQuiz" @return-home="returnHome" @return-result="showResult"  @add-quiz="add_Quiz" :result="resultOfQuizz"/>
+        <component :is="currentComponent"  @quiz-selected="selectedQuiz" :quiz="quizSelected"  @start-quiz="startQuiz" @return-home="returnHome" @return-result="showResult"  @add-quiz="add_Quiz" :result="resultOfQuizz" @delete_quiz="deleteQuiz"/>
       </div>
    </div>
   </main>
