@@ -49,8 +49,8 @@ const nextQuestion = ()=>{
 }
 </script>
 <template>
-     <div class="d-flex justify-content-center row">
-            <div class="col-md-10 col-lg-10">
+     <div class=" justify-content-center row">
+            <div class="">
                 <div class="border">
                     <div class="question bg-white p-3 border-bottom">
                         <div class="d-flex flex-row justify-content-between align-items-center mcq">

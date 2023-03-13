@@ -20,10 +20,7 @@ for (const question of result.quiz.questions){
             </h3> 
             <h5>Your score is  ({{result.Info.score}}/{{result.quiz.questions.length}})</h5>
         </div>
-       
-
-       <ul class="fs-5 mt-5 p-2" style="width:70%;margin: auto;">
-    
+       <ul class="fs-5 mt-5 p-2" style="margin: auto;">
             <ol class="list-group list-group"  v-for="question in answers" :key="question.id">
                 <li class="list-group-item d-flex justify-content-between align-items-start">
                     <div class="ms-2 me-auto">
@@ -32,8 +29,6 @@ for (const question of result.quiz.questions){
                     </div>
                 </li>
             </ol>
-      
-       
        </ul>
        <div class=" text-center mt-4">
         <button  @click="$emit('return-home')" type="button" class="btn btn-warning">Return</button>
