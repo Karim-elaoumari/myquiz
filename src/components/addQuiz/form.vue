@@ -98,6 +98,7 @@ const addOption = (index)=>{
     <button type="button" class="btn btn-primary" @click="addQuestion" > Add Question</button>
     <hr>
     <button type="button" class="btn btn-success" @click="submit">Submit Quiz</button>
+    <button type="button" class="btn btn-warning" @click="$emit('return-home')">Return home</button>
 </div>
 </div> 
 
