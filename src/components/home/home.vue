@@ -12,7 +12,6 @@ const search = ref("")
     else{
         quizes.value = quizmain.value.filter(quiz => quiz.name.toLowerCase().includes(search.value.toLowerCase()))
     }
-
  });
 </script>
 <template>

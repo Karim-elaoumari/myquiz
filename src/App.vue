@@ -11,7 +11,7 @@ import AddQuiz from './components/addQuiz/form.vue'
 const q = ref([])
 const fetchQuizes = () => {
       axios
-        .get("https://myquiz-server.vercel.app/api/quizes")
+        .get("https://myquiz-server.herokuapp.com/quizes")
         .then((response) => {
           q.value = response.data;
         });

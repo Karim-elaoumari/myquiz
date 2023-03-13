@@ -24,7 +24,7 @@ quizValue.value.questions.push({
                 })
 const submit = () => {
   // Add the quiz to the server
-  axios.post('https://myquiz-server.vercel.app/api/quizes', quizValue.value)
+  axios.post('https://myquiz-server.herokuapp.com/quizes', quizValue.value)
     .then((response) => {
       // If the POST request was successful, add the new quiz to the local quizes array as well
       console.log('gooood')
