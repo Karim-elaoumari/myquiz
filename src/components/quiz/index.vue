@@ -20,7 +20,7 @@ const return_result = (result)=>{
 <template>
  <div class="container">
         <Loader v-if="isLoading" />
-        <Quiz v-else class="container mt-5" :quiz="quiz" @return-home="$emit('return-home')"  @return-result="return_result"/>
+        <Quiz v-else class=" mt-5" :quiz="quiz" @return-home="$emit('return-home')"  @return-result="return_result"/>
     </div>
 </template>
 <style scoped>
