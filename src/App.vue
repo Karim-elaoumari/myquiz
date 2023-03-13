@@ -44,7 +44,7 @@ const add_Quiz = ()=>{
   currentComponent.value = AddQuiz
 }
 const deleteQuiz = ()=>{
-  axios.delete('https://myquiz-server.herokuapp.com/quizes/'+quizSelected.id)
+  axios.delete('https://myquiz-server.herokuapp.com/quizes/'+quizSelected.value.id)
     .then((response) => {
       alert('quiz-deleted')
     })
